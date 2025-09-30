@@ -9,8 +9,10 @@
 #version: v2
 ######################
 
+#delete folder if already exist
+rm -rf task_folder
 
-#create  a folder
+#create  a new folder
 mkdir task_folder
 
 #change directory to the folder
