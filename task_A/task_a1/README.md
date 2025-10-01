@@ -1,11 +1,12 @@
 # task 1 description
 
-# Task 1 – Create a Directory and File
+# Task A1 – Create a Directory and File
 
-## �� Task Description
-The goal of this task is to create a directory, then create a file inside it using Linux commands.
-
----
+## �� Objective
+-create a folder and files
+-add content to one of the files
+-backup the file
+-list files in long format, older files first
 
 ## 🛠️ Steps Taken
 1. Created a new folder called `task_folder`
@@ -35,3 +36,11 @@ The goal of this task is to create a directory, then create a file inside it usi
     mkdir backup (best practice, check if the file already exist by using the if script command)
 
 6. copy file3 inside backup folder
+
+7. list files in long format 
+    ```bash
+    ls -ltr
+
+### Script
+    see [`task_a.sh`]
+
