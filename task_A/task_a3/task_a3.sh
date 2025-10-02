@@ -35,6 +35,10 @@ nohup python3 -m http.server 8000 > server.log 2>&1 &
 #store process id in server.pid
 echo $! > server.pid
 
+#wait 5s for server to start
+echo "waiting for the server"
+sleep 5
+
 #verify with curl
  curl -I http://localhost:8000
 
