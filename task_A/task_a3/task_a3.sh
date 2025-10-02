@@ -31,24 +31,15 @@ echo "hello world my name is damilola and i am an aspiring dev ops engineer"> in
 
 #start the http server
 nohup python3 -m http.server 8000 > server.log 2>&1 &
-echo $!>server.pid
+
+#store process id in server.pid
+echo $! > server.pid
 
 #verify with curl
- curl -i http://localhost:8000
+ curl -I http://localhost:8000
 
 #stop using the safe pid
 kill $( cat server.pid )
 
 #delete the pid
 rm -rf server.pid
-
-
-
-
-
-
-
-
-
-
-
